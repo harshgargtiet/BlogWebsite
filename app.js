@@ -12,6 +12,9 @@ res.sendFile(__dirname+"/index.html")
 app.get("/about",function(req,res){
     res.send("<h1> created with love by Harsh </h1>")
     });
+    app.get("/contact",function(req,res){
+        res.send("<h1> Harsh Garg 7009115485 </h1>")
+        });
 
 app.post("/",function(req,res){
     var blogname =req.body.blogName;
